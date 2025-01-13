@@ -1,0 +1,8 @@
+.navbar {
+    background-color: #f9f9f9;
+}
+
+.navbar .navbar-item:hover {
+    color: #a1c70c;
+    background-color: transparent;
+}

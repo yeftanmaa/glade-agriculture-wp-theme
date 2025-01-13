@@ -1,0 +1,23 @@
+.post-content-privacy {
+    margin: 50px 0;
+    text-align: justify;
+}
+
+.post-content-privacy p {
+    margin-bottom: 20px;
+}
+
+.post-content-privacy li {
+    margin-left: 1.5rem;
+    list-style-type: disc;
+}
+
+.post-content-privacy ul {
+    margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    .post-content-privacy {
+        padding: 0 20px;
+    }
+}

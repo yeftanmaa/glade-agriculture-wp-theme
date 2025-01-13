@@ -1,0 +1,138 @@
+/*
+Theme Name: Personal Custom Theme
+Author: Nathan Johanes Yefta
+Author URI: nathstudio.vercel.app
+Description: My custom theme for studying WordPress
+Version: 1.0
+License: GNU General Public License v3 or later
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+*/
+
+/* Hide the Text tab in comment editor */
+.wp-switch-editor {
+    display: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f9f9f9;
+    font-family: "Poppins", serif;
+}
+
+a {
+	text-decoration-thickness: 1px !important;
+	text-underline-offset: .1em;
+    color: white;
+}
+
+.custom-btn {
+    color: black !important;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.custom-btn:hover {
+    color: #a1c70c !important;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.custom-btn-outlined {
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: transparent;
+}
+
+
+.custom-btn-outlined:hover {
+    background-color: black;
+    color: #a1c70c !important;
+}
+
+
+.post-title {
+    font-size: 2.5rem;
+    line-height: 3.2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+.post-meta {
+    font-size: 0.9rem;
+    color: #555;
+}
+.post-title {
+    color: #333;
+}
+
+.post-content p {
+    margin-bottom: 1.5rem;
+    color: #6c6c6c;
+}
+
+.tag {
+    font-size: 0.85rem;
+}
+
+.post-content li {
+    margin-bottom: 1.2rem;
+    margin-left: 15px;
+    color: #6c6c6c;
+}
+
+.wp-block-html {
+    font-style: italic;
+    color: #333;
+    margin: 20px 0;
+}
+
+/* Focus styles */
+:where(.wp-site-blocks *:focus) {
+	outline-width: 2px;
+	outline-style: solid;
+}
+
+/* Increase the bottom margin on submenus, so that the outline is visible. */
+.wp-block-navigation .wp-block-navigation-submenu .wp-block-navigation-item:not(:last-child) {
+	margin-bottom: 3px;
+}
+
+/* Increase the outline offset on the parent menu items, so that the outline does not touch the text. */
+.wp-block-navigation .wp-block-navigation-item .wp-block-navigation-item__content {
+	outline-offset: 4px;
+}
+
+/* Remove outline offset from the submenus, otherwise the outline is visible outside the submenu container. */
+.wp-block-navigation .wp-block-navigation-item ul.wp-block-navigation__submenu-container .wp-block-navigation-item__content {
+	outline-offset: 0;
+}
+
+/*
+ * Progressive enhancement to reduce widows and orphans
+ * https://github.com/WordPress/gutenberg/issues/55190
+ */
+h1, h2, h3, h4, h5, h6, blockquote, caption, figcaption, p {
+	text-wrap: pretty;
+}
+
+/*
+ * Change the position of the more block on the front, by making it a block level element.
+ * https://github.com/WordPress/gutenberg/issues/65934
+*/
+.more-link {
+	display: block;
+}
+
+.wp-block-media-text {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.wp-block-image img {
+    max-width: 100%;
+    height: auto;
+}
+

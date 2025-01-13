@@ -1,0 +1,30 @@
+.post-meta-custom {
+    width: 400px;
+    border: 1px solid black;
+    border-radius: 50px;
+}
+.separator-line {
+    height: 46px;
+    width: 1px;
+    background-color: black;
+}
+
+@media only screen and (max-width: 600px) {
+    .post-meta-custom {
+        display: block;
+        border: none;
+    }
+    .separator-line {
+        display: none;
+    }
+
+    .column {
+        padding-bottom: 2px;
+        padding-top: 0px;
+    }
+
+    .column-mobile p {
+        font-size: 20px;
+        font-family: monospace;
+    }
+}
